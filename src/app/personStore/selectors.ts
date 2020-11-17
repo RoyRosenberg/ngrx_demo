@@ -18,4 +18,7 @@ export const selectList = createSelector(
     (personState) => personState.list
 );
 
-
+export const selectWErrorMessage = createSelector(
+    selectPerson,
+    (personState) => personState.errorMessage
+);
